@@ -11,7 +11,7 @@ Usage
 go build
 ./gonukeS3 -bucket="bucket-name -region="region-name"
 ```
-
+```
 Usage of ./gonukeS3:
   -bucket string
     	AWS S3 Bucket Name
@@ -26,3 +26,4 @@ Usage of ./gonukeS3:
   -v	verbose mode?
   -workers int
     	Number of workers (default 10)
+```
