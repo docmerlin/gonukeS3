@@ -77,7 +77,7 @@ func min(x, y int) int {
 
 func main() {
 	log.Printf("Nuking Bucket: %s", bucketName)
-	s3Instance := s3.New(session.New(), &aws.Config{Region: aws.String("us-west-2")})
+	s3Instance := s3.New(session.New(), &aws.Config{Region: aws.String(region)})
 
 	keys := make(chan []*s3.ObjectIdentifier)
 	wg := &sync.WaitGroup{}
